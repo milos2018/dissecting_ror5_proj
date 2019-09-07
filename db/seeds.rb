@@ -10,7 +10,7 @@
 
 3.times do |topic|
   Topic.create!(
-         title: "Topic #{topic}"
+    title: "Topic #{topic}"
   )
 end
 p "3 topics created"
@@ -56,3 +56,11 @@ Portfolio.create!(
   main_image: "https://via.placeholder.com/600x400",
   thumb_image: "https://via.placeholder.com/300x200"
 )
+p "Angular portfolio created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Tchnology #{technology}"
+  )
+end
+p "3 technologies created"
