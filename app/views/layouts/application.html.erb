@@ -3,7 +3,7 @@
   <head>
     <title>DevcampPortfolio</title>
 
-    <% if current_user %>
+    <% if current_user.is_a?(User) %>
       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
       <%= link_to "Edit", edit_user_registration_path %>
     <% else %>
@@ -27,5 +27,9 @@
     <% if session[:source] %>
         Thanks for visiting me from <%= session[:source] %>
     <% end %>
+
+    <hr>
+    <%= current_user.class %>
+    <%= current_user %>
   </body>
 </html>
