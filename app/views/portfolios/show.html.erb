@@ -14,3 +14,16 @@
     </li>
 <% end %>
 </ul>
+
+<hr>
+
+<%= params.inspect %>
+
+<hr>
+
+<%= session[:source].inspect %>
+
+<hr>
+<% if session[:source] %>
+  Thanks for visiting me from <%= session[:source] %>
+<% end %>
