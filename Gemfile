@@ -55,3 +55,5 @@ gem 'devise', '~> 4.2'
 gem 'bootstrap', '~> 4.3.1'
 
 gem 'jquery-rails'
+
+gem 'antic_view_tool', git: 'https://github.com/milos2018/antic_view_tool'
