@@ -2,6 +2,11 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
 
+  # all: user (ulogovan i neulogovan)
+  # user: ulogovan user u bilo kojoj roli
+  # site_admin: je ulogovan user u rodi site_admin
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :update]}, site_admin: :all
+
   # GET /blogs
   # GET /blogs.json
   def index

@@ -57,3 +57,5 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
 gem 'antic_view_tool', git: 'https://github.com/milos2018/antic_view_tool'
+
+gem 'petergate', '~> 1.6', '>= 1.6.3'
