@@ -21,4 +21,8 @@ module ApplicationHelper
   def sample_helper
     content_tag(:div, "My content", class: "my-class")
   end
+
+  def generate_copyright_generator
+    AnticViewTool::Renderer.copyright 'Milos Antic', 'All rights reserved'
+  end
 end
