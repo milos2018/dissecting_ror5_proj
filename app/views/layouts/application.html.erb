@@ -21,7 +21,6 @@
 
         <div class="cover-container">
           <%= render "shared/application_nav" %>
-          <%= login_helper %>
 
           <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p>
@@ -31,8 +30,7 @@
           <hr>
           <%= source_helper("application") %>
 
-          <hr>
-          <%= generate_copyright_generator %>
+          <%= render "shared/application_footer" %>
         </div>
       </div>
     </div>
