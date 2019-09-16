@@ -15,22 +15,26 @@
   </head>
 
   <body>
-    <%= render "shared/nav", location: 'top' %>
+    <div class="site-wrapper">
 
-    <%= login_helper %>
+      <div class="site-wrapper-inner">
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+        <div class="cover-container">
+          <%= render "shared/application_nav" %>
+          <%= login_helper %>
 
-    <hr>
-    <%= source_helper("application") %>
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
 
-    <hr>
-    <%= current_user.class %>
-    <%= current_user %>
+          <%= yield %>
 
-    <hr>
-    <%= generate_copyright_generator %>
+          <hr>
+          <%= source_helper("application") %>
+
+          <hr>
+          <%= generate_copyright_generator %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
