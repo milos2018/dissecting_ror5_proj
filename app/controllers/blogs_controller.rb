@@ -5,7 +5,7 @@ class BlogsController < ApplicationController
   # all: user (ulogovan i neulogovan)
   # user: ulogovan user u bilo kojoj roli
   # site_admin: je ulogovan user u rodi site_admin
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :update]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :update, :toggle_status]}, site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
