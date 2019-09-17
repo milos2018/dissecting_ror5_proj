@@ -59,3 +59,5 @@ gem 'jquery-rails'
 gem 'antic_view_tool', git: 'https://github.com/milos2018/antic_view_tool'
 
 gem 'petergate', '~> 1.6', '>= 1.6.3'
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
