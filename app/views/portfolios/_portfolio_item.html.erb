@@ -1,7 +1,6 @@
 <div class="card">
   <%= image_tag(portfolio_item.thumb_image, alt:"Card image cap") if !portfolio_item.thumb_image.nil? %>
   <p class="card-text">
-
     <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>
     <span><%= portfolio_item.subtitile %></span>
     <span><%= portfolio_item.body %></span>
