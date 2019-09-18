@@ -52,7 +52,7 @@ gem 'friendly_id', '~> 5.2.4'
 
 gem 'devise', '~> 4.2'
 
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap', '~> 4.0.0'
 
 gem 'jquery-rails'
 
