@@ -52,8 +52,6 @@ gem 'friendly_id', '~> 5.2.4'
 
 gem 'devise', '~> 4.2'
 
-gem 'bootstrap', '~> 4.0.0'
-
 gem 'jquery-rails'
 
 gem 'antic_view_tool', git: 'https://github.com/milos2018/antic_view_tool'
@@ -63,3 +61,5 @@ gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+
+gem 'bootstrap', '~> 4.3.1'
