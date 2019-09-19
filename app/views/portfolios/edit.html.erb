@@ -1,27 +1,5 @@
-<h1>Edit portfolio</h1>
+<div class="container portfolio-form">
+  <h1>Edit portfolio</h1>
 
-<%= form_for(@portfolio_item) do |form| %>
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :subtitile %>
-    <%= form.text_field :subtitile %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
-
-
-<hr>
-
-<%= params.inspect %>
+  <%= render 'form', portfolio_item: @portfolio_item %>
+</div>
